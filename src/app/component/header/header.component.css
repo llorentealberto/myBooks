@@ -1,0 +1,45 @@
+.container-nav{
+    display: flex;
+    
+    align-content: space-around;
+    justify-items: center;
+     background: linear-gradient(rgb(0, 0, 0), rgb(0, 159, 207));
+    height: 80px;
+    width: 100%;
+}
+
+.titulo{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 25%;
+    padding: 10px;
+}
+.navegador{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    width: 75%;
+    font-size: x-large;
+    color: azure;
+    text-decoration: none;
+}
+.navegador a{
+    text-decoration: none;
+    color: azure;
+}
+.navegador a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 25%;
+    border-radius: 5%;
+}
+.navegador a:hover{
+    background: black ;
+    color: aqua;
+}

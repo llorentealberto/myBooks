@@ -1,0 +1,44 @@
+.container-form{
+    height: 657px;
+    background-image: url(../../../assets/registo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.titulo{
+    border: solid black;
+    border-radius: 5%;
+    height: 80px;
+    width: 300px;
+    text-align: center;
+    
+    font-size: xx-large;
+    background-color: bisque;
+}
+.form{
+    border: solid black;
+    display: flex;
+    flex-direction: column;
+    height: 400PX;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10%;
+
+}
+.form input{
+    height: 30px;
+    border-radius: 5%;
+    
+}
+.form button{
+    font-size: large;
+    border: solid black;
+    border-radius: 5%;
+}

@@ -1,0 +1,80 @@
+.container-global{
+    display: flex;
+    background-image: url(../../../assets/home.jpg);
+    background-size: cover;
+}
+.cont-general{
+    height: 656px;
+    width: 100%;
+    background-image: url(../../../assets/home.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card-container{
+
+    border: solid black;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 420px;
+    width: 300px;
+    background-color: antiquewhite;
+}
+.card-container img{
+    border-radius: 6% 6% 0 0;
+    height:200px;
+    width:295px;
+}
+.card-container p{
+    font-size: large;
+    border-top: solid black 1px;
+    width: 70%;
+    text-align: center;
+}
+.card-container button{
+    font-size: larger;
+
+}
+.segunda-clase{
+    background-color: green;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 656px;
+    width: 50%;
+
+}
+.cont-form{
+    border: solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    
+    justify-content: center;
+    height: 450px;
+    width: 400px;
+    background-color: bisque;
+    opacity: 0.8;
+    font-size: x-large;
+    font-weight: bold;
+}
+.boton{
+    height: 60px;
+    width: 180px;
+    margin: 10px;
+    border: solid black;
+    border-radius: 30%;
+    font-size: x-large;
+}

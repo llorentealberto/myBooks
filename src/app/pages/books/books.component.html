@@ -1,0 +1,58 @@
+
+<div class="container-global">
+    <div class="cont-general">
+    <ng-container *ngFor="let book of libros ; let even= even " >
+        <div class="card-container">
+
+            <img src="../../../assets/libro.avif" alt="">
+            <h2></h2>
+            <P> {{book.id_book | formato}}</P>
+            <p>{{book.id_user}}</p>
+            <p>{{book.title}}</p>
+            <p>{{book.type}}</p>
+            <p>{{book.author}}</p>
+            <p>{{book.price}}</p>
+            <p>{{book.photo}}</p>
+            
+            <button [ngClass]="even===true ? 'segunda-clase' : ''">comprar</button>
+
+
+
+
+
+        </div>
+    </ng-container>
+    <div *ngIf="libros.length===0">
+        <p>No hay ningun libro </p>
+    </div>
+
+</div>
+
+<div class="form">
+    <form action="tu_archivo_de_procesamiento.php" method="post" class="cont-form">
+        <label >ID del Libro:</label>
+        <input type="text" id="id_book" name="id_book" required [(ngModel)]="id_book">
+    
+        <label >ID del Usuario:</label>
+        <input type="text" id="id_user" name="id_user" required [(ngModel)]="id_user">
+    
+        <label >Título:</label>
+        <input type="text" id="title" name="title" required [(ngModel)]="title">
+    
+        <label >Tipo:</label>
+        <input type="text" id="type" name="type" required [(ngModel)]="type">
+    
+        <label >Autor:</label>
+        <input type="text" id="author" name="author" required [(ngModel)]="author">
+    
+        <label >Precio:</label>
+        <input type="text" id="price" name="price" required [(ngModel)]="price">
+    
+        <label >URL de la Foto:</label>
+        <input type="url" id="photo" name="photo" required [(ngModel)]="photo">
+    
+        <input type="submit" value="Enviar" class="boton" (click)="anadirlibro()">
+    </form>
+</div>
+</div>
+
